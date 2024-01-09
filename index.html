@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>score-card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+            <h3>HOME</h3>
+            <div id="home-score-container" class="score-container">
+                <p id="home-score" class="score">0</p>
+            </div>
+
+            <div class="button-container">
+                <button id="home-add1" class="add-btn" onclick="updateCounter('home', 1)">+ 1</button>
+                <button id="home-add2" class="add-btn" onclick="updateCounter('home', 2)">+ 2</button>
+                <button id="home-add3" class="add-btn" onclick="updateCounter('home', 3)">+ 3</button>
+            </div>
+        </div>
+        
+        <div id="guest">
+            <h3>GUEST</h3>
+            <div id="guest-score-container" class="score-container">
+                <p id="guest-score" class="score">0</p>
+            </div>
+            
+            <div class="button-container">
+                <button id="guest-add1" class="add-btn" onclick="updateCounter('guest', 1)">+ 1</button>
+                <button id="guest-add2" class="add-btn" onclick="updateCounter('guest', 2)">+ 2</button>
+                <button id="guest-add3" class="add-btn" onclick="updateCounter('guest', 3)">+ 3</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <button id="clear-game" onclick="clearScores()">Clear Game</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
