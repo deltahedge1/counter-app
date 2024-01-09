@@ -1,5 +1,5 @@
 function updateCounter(home_or_guest, countNumber) {
-    
+    // this the function that updates the counters
     let elId 
 
     if (home_or_guest === "home") {
